@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Concepts Video Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>Dynamics Lab Concepts Video</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home">
+        <h2>Welcome to the Dynamics Lab Concepts Video </h2>
+        <p>Explore and learn with our curated videos on lab concepts. This website was developed as a Learning medium for Dynamics Lab concepts. Developed as a solution to store the videos so that students can interactively view the videos which reduces their burden on downloading and storing videos often for reference</p>
+        <p> Developed by the Team "Precision Professionals" as a implementation for our QC problem "DIFFICULTIES IN UNDRSTANDING LAB CONCEPTS DUE TO LACK OF RELATED THEORITICAL KNOWLEDGE" under the guidance of <b>Mr.T.Prakash</b></p> 
+    </section>
+
+    <!-- Video Library Section -->
+    <section id="videos">
+        <h2>Video Library</h2>
+
+        <div class="video">
+            <h3>Concept 1: CAM PROFILE ANALYSIS</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GOAWib0T_MM?si=S3gy-euxfCUR0koO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+        
+
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz</h2>
+        <p>Cylindrical cams are also known as:</p>
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="cam" value="a"> a) Spiral
+            </label><br>
+            <label>
+                <input type="radio" name="cam" value="b"> b) Conjugate
+            </label><br>
+            <label>
+                <input type="radio" name="cam" value="c"> c) Drum
+            </label><br>
+            <label>
+                <input type="radio" name="cam" value="d"> d) Spherical
+            </label><br><br>
+            <button type="button" onclick="checkAnswer()">Submit Answer</button>
+        </form>
+        <p id="quiz-result"></p>
+    </section>
+
+    <!-- Comments Section -->
+    <section id="comments">
+        <h2>Ask Your Doubts</h2>
+        <div id="comment-section"></div>
+        <textarea id="comment-input" placeholder="Ask a question or leave a comment"></textarea>
+        <button onclick="addComment()">Post Comment</button>
+    </section>
+
+    <section id="contact"></section>
+        <h2>Contact Us</h2>
+        <!-- Google Form Embed Code -->
+        <iframe src ="https://docs.google.com/forms/d/e/1FAIpQLSeGUSPmdUe7xPbNDeHwENhjBu08KFtQ97pNd_S4gIVJTmYglQ/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading… </iframe> 
+    </section>
+
+    <footer>
+        <p>Developed by THE PRECISION PROFESSIONALS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
